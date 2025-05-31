@@ -1,0 +1,48 @@
+body {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+main {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+#navbar {
+  background-color: #C4A484;
+  padding: 5px;
+}
+
+header {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+code {
+  display: block;
+  background-color: #D3D3D3;
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#Top_of_Page {
+  font-size: 20px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+@media (max-width: 726px) {
+
+body {
+  display: block;
+}
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+  </head>
+<body>
+  <nav id="navbar">
+    <header id="Top_of_Page">Page Navigation</header>
+    <ul>
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#What_You_Should_Already_Know" class="nav-link">What You Should Already Know</a></li>
+      <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+      <li><a href="#Declaring_Variables_and_Constants" class="nav-link">Declaring Variables and Constants</a></li>
+      <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>This project will be a simple introduction to the basics of JavaScript</p>
+    </section>
+    <section class="main-section" id="What_You_Should_Already_Know">
+      <header>What You Should Already Know</header>
+      <p>This page assumes that you have the following</p>
+      <ul>
+        <li>Basic Knowledge of html</li>
+        <li>A general understanding of how to read simple lines of code</li>
+        <li>Some foundational programming knowledge</li>
+      </ul>
+      <p>If this sounds like you, then you should enjoy this short read</p>
+    </section>
+    <section class="main-section" id="Hello_World">
+      <header>Hello World</header>
+      <p>Let's start with the first code that every developer writes!</p>
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }<br>
+greetMe("World");</code>
+      <p>Congratulations! If you followed along, you have taken your first step</p>
+    </section>
+    <section class="main-section" id="Declaring_Variables_and_Constants">
+      <header>Declaring Variables and Constants</header>
+      <h1>Variables</h1>
+      <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+
+      <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+
+        <h2>Declaring Variables</h2>
+        <p>You can declare a variable in three ways:
+        <br>
+        With the keyword var. For example,</p>
+        <code>var x = 42.</code>
+        <p>This syntax can be used to declare both local and global variables.
+        <br>
+By simply assigning it a value. For example,</p>
+        <code>x = 42.</code>
+        <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+        <br>
+With the keyword let. For example,</p>
+        <code>let y = 13.</code>
+      <h1>Constants</h1>
+      <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
+      <code>const PI = 3.14;</code>
+      <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
+
+      <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
+
+      <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
+      <code>// THIS WILL CAUSE AN ERROR<br> function f() {};<br> const f = 5;<br> // THIS
+WILL CAUSE AN ERROR ALSO<br> function f() { const g = 5;<br> var g;<br>
+//statements }</code>
+      <p>However, object attributes are not protected, so the following statement is executed without problems.</p>
+      <code>const MY_OBJECT = {"key": "value"};<br> MY_OBJECT.key =
+"otherValue";</code>
+    </section>
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <p>The latest ECMAScript standard defines seven data types:</p>
+      <ul>
+        <li>Six data types that are primitives:</li>
+          <ul>
+            <li>Boolean. true and false</li>
+            <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+            <li>undefined. A top-level property whose value is undefined.</li>
+            <li>Number. 42 or 3.14159.</li>
+            <li>String. "Howdy"</li>
+            <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+          </ul>
+        <li>and Object</li>
+      </ul>
+    </section>
+  </main>
+</body>
+  <nav><a href="#Top_of_Page">Back to Top</a></nav>
+</html>
